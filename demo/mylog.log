@@ -1,0 +1,40 @@
+2019-05-17 16:26:27.128  INFO 12508 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on ui-tianding with PID 12508 (D:\workspace\demo\target\classes started by Administrator in D:\workspace\demo)
+2019-05-17 16:26:27.131  INFO 12508 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-17 16:26:27.844  INFO 12508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-17 16:26:27.860  INFO 12508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-17 16:26:27.861  INFO 12508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-17 16:26:27.940  INFO 12508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-17 16:26:27.940  INFO 12508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 779 ms
+2019-05-17 16:26:28.082  INFO 12508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-17 16:26:28.216  INFO 12508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-17 16:26:28.219  INFO 12508 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.354 seconds (JVM running for 1.797)
+2019-05-17 16:26:44.431  INFO 13024 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on ui-tianding with PID 13024 (D:\workspace\demo\target\classes started by Administrator in D:\workspace\demo)
+2019-05-17 16:26:44.437  INFO 13024 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-17 16:26:45.150  INFO 13024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-17 16:26:45.168  INFO 13024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-17 16:26:45.169  INFO 13024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-17 16:26:45.248  INFO 13024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-17 16:26:45.248  INFO 13024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 772 ms
+2019-05-17 16:26:45.396  INFO 13024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-17 16:26:45.529  INFO 13024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-17 16:26:45.531  INFO 13024 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.375 seconds (JVM running for 1.938)
+2019-05-17 16:29:14.180  INFO 11720 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on ui-tianding with PID 11720 (D:\workspace\demo\target\classes started by Administrator in D:\workspace\demo)
+2019-05-17 16:29:14.184  INFO 11720 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-17 16:29:14.879  INFO 11720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-17 16:29:14.897  INFO 11720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-17 16:29:14.897  INFO 11720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-17 16:29:14.981  INFO 11720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-17 16:29:14.981  INFO 11720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 769 ms
+2019-05-17 16:29:15.131  INFO 11720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-17 16:29:15.267  INFO 11720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-17 16:29:15.270  INFO 11720 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.379 seconds (JVM running for 1.808)
+2019-05-17 16:29:54.585  INFO 9876 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on ui-tianding with PID 9876 (D:\workspace\demo\target\classes started by Administrator in D:\workspace\demo)
+2019-05-17 16:29:54.589  INFO 9876 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-05-17 16:29:55.289  INFO 9876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-05-17 16:29:55.305  INFO 9876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-17 16:29:55.306  INFO 9876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-17 16:29:55.387  INFO 9876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-17 16:29:55.387  INFO 9876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 766 ms
+2019-05-17 16:29:55.531  INFO 9876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-17 16:29:55.669  INFO 9876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-05-17 16:29:55.671  INFO 9876 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.394 seconds (JVM running for 1.835)

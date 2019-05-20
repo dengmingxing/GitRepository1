@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <contextName>mylogdemo</contextName>
+    <!--定义变量-->
+   <!--<property name="rootlevel" vluse="log.level.root"></property>-->
+    <!--这是主要的用来定义日志的输出，这里是输出到控制台-->
+    <springProperty name="logFile" source="log.file" />
+    <appender  name="log1" class="ch.qos.logback.core.ConsoleAppender">
+     <!--展示格式-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{yyyy-MM:dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </layout>
+    </appender>
+    <appender name="log2" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM:dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+       <!-- <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern></fileNamePattern>
+            <fileNamePattern>${logFile}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <maxHistory>90</maxHistory>
+        </rollingPolicy>-->
+    </appender>
+    <!--下面是将日志输出到文件中-->
+    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--这里是使用过滤器，表示只需要某一个级别的日志，因为默认的是info级别的-->
+    <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>error</level>
+     </filter>-->
+        <!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则
+          如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天
+          的日志改名为今天的日期。即，<File> 的日志都是当天的。
+      -->
+        <File>${logback.logdir}/error.${logback.appname}.log</File>
+        <!--滚动策略，按照时间滚动 TimeBasedRollingPolicy-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间-->
+            <!--下面是定义的文件名，输出的文件直接在项目的根目录下-->
+            <FileNamePattern>${logback.logdir}/error.${logback.appname}.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--只保留最近90天的日志-->
+            <maxHistory>90</maxHistory>
+            <!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志-->
+            <!--<totalSizeCap>1GB</totalSizeCap>-->
+        </rollingPolicy>
+        <!--日志输出编码格式化-->
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!--这里的additivity是指定的该日志级别是否向上传递,指定的目录有冲突的话，范围小的有效-->
+    <logger name="com.example.demo.controller.HelloController" level="info" additivity="false">
+        <!--将日志输出交给指定的appender进行打印-->
+        <appender-ref ref="fileErrorLog"></appender-ref>
+    </logger>
+    <root level="info">
+        <appender-ref ref="log1"></appender-ref>
+        <appender-ref ref="log2"/>
+    </root>
+</configuration>
